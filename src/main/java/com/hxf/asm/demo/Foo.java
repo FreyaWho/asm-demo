@@ -1,4 +1,4 @@
-package com.hxf.asm.two;
+package com.hxf.asm.demo;
 
 public class Foo {
     public void testFirst(){

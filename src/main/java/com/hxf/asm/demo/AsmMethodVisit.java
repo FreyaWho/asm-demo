@@ -1,7 +1,10 @@
-package com.hxf.asm.two;
+package com.hxf.asm.demo;
 
-import jdk.internal.org.objectweb.asm.MethodVisitor;
-import jdk.internal.org.objectweb.asm.Opcodes;
+//import jdk.internal.org.objectweb.asm.MethodVisitor;
+//import jdk.internal.org.objectweb.asm.Opcodes;
+
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
 public class AsmMethodVisit extends MethodVisitor {
     public AsmMethodVisit(MethodVisitor mv) {

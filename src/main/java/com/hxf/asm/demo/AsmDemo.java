@@ -1,10 +1,14 @@
-package com.hxf.asm.two;
+package com.hxf.asm.demo;
 
-import jdk.internal.org.objectweb.asm.*;
+//import jdk.internal.org.objectweb.asm.*;
+
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.Opcodes;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 public class AsmDemo extends ClassLoader implements Opcodes {
 
@@ -40,6 +44,7 @@ public class AsmDemo extends ClassLoader implements Opcodes {
         System.out.println("***************************");
 
         exampleClass.getMethods()[1].invoke(exampleClass.newInstance(), null);
+
         // gets the bytecode of the Example class, and loads it dynamically
 
 //        FileOutputStream fos = new FileOutputStream("e:\\logs\\Example.class");
